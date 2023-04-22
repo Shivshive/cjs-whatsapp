@@ -1,0 +1,47 @@
+{
+  "applicationId": "js.neutralino.zero",
+  "version": "1.0.0",
+  "defaultMode": "window",
+  "documentRoot": "/react-src/build/",
+  "url": "/",
+  "enableServer": true,
+  "enableNativeAPI": true,
+  "exportAuthInfo": true,
+  "enableExtensions": true,  
+  "extensions": [
+    {
+      "id": "js.neutralino.cjs-whatsapp-extension",
+      "command": "node ${NL_PATH}/extensions/cjs-whatsapp/main.js"
+    }
+  ],
+  "nativeAllowList": [
+    "app.*",
+    "os.*",
+    "filesystem.*",
+    "extensions.*"
+  ],
+  "modes": {
+    "window": {
+      "title": "cjs-whatsapp",
+      "width": 800,
+      "height": 500,
+      "minWidth": 400,
+      "minHeight": 200,
+      "maximize": true,
+      "enableInspector": true,
+      "icon": "/react-src/public/logo192.png"
+    }
+  },
+  "cli": {
+    "binaryName": "cjs-whatsapp",
+    "extensionsPath": "/extensions/",
+    "resourcesPath": "/react-src/build/",
+    "clientLibrary": "/react-src/public/__neutralino_globals.js",
+    "binaryVersion": "4.10.0",
+    "clientVersion": "3.8.2",
+    "frontendLibrary": {
+      "patchFile": "/react-src/public/index.html",
+      "devUrl": "http://localhost:3000"
+    }
+  }
+}

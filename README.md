@@ -1,4 +1,39 @@
-# Send Whatsapp Bulk Message via NodeJS code.
-### Enter phone numbers in the format like 91xxxxxxxx in the data.xlsx and run the application using command yarn start.
-### There are two options if >> inside data.xlsx image path is given then it will omit msgdata field and send the image message with caption. 
-### If image path is not there then it will send the simple message and take the msgdata from data.xlsx.
+# neutralinojs-react
+A simple React.js template for building Neutralinojs apps
+
+## How to install
+
+Create a new Neutralinojs project with this template.
+
+```
+neu create myapp --template codezri/neutralinojs-react
+```
+
+## How to develop
+
+Install React.js app's dependencies
+
+```
+cd myapp-react
+npm i
+```
+
+Start the development server
+
+```
+cd react-src
+npm start
+```
+
+Start the Neutralinojs app
+
+```
+cd ..
+neu run --frontend-lib-dev
+```
+
+Hot reloading will work, happy coding...
+
+## License
+
+[MIT](LICENSE)
